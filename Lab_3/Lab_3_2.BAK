@@ -1,0 +1,7 @@
+PREDICATES
+nondeterm Sum(integer, integer)
+CLAUSES
+Sum(0,0).
+Sum(N,S):-N1=N-1, Sum(N1,S1), S=S1+N*N.
+GOAL
+Sum(5,RESULT).
